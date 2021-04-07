@@ -4,7 +4,7 @@ var score=0;
 var userName = readlineSync.question("Enter your name:\n");
 console.log("Hey,"+userName+".");
 console.log("let's play a short game on how good you know about twitter?\n");
-
+console.log("Note: Use all lowercase letters\n");
 function quiz(question,answer){
   var useranswer=readlineSync.question(question);
 
@@ -18,8 +18,13 @@ function quiz(question,answer){
     console.log("Your current score is:"+score);
     console.log("---------------------------")
 }
-var quests = [{
-    question:"First things first, Can a tweet be edited once posted?",
+var quests = [
+  {
+    question:"First things first, First name of twitter founder?",
+    answer:"jack"
+  },
+  {
+    question:"Can a tweet be edited once posted?",
     answer:"no"
   },
   {
@@ -30,6 +35,11 @@ var quests = [{
     question:"Can one promote their brand on twitter by paying for ads?",
     answer: "yes"
   },
+              
+  {
+    question:"What's the name of that feature on twitter?",
+    answer: "fleets"
+  },
   {
     question:"Connecting with anyone on twitter is easy compare to other platforms?",
     answer:"yes"
@@ -37,10 +47,6 @@ var quests = [{
   {
     question:"Does twitter have similar feature like stories similar to IG?",
     answer: "yes"
-  },
-  {
-    question:"What's the name of that feature on twitter?",
-    answer: "fleets"
   },
 ]
 
